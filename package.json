@@ -1,0 +1,21 @@
+{
+  "name": "recipest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "seed-data": "ts-node dist/setup.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/faker": "^5.5.9",
+    "faker": "^5.5.3",
+    "knex": "^1.0.6",
+    "pg": "^8.7.3",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}
