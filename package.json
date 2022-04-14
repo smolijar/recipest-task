@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "seed-data": "ts-node dist/setup.js",
+    "seed-data": "ts-node src/setup.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
