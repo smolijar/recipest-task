@@ -2,7 +2,7 @@ import { knex } from 'knex'
 import { animal, internet, commerce, lorem, company, random, date, datatype, helpers } from 'faker'
 
 const times = <R>(n: number, fn: (i: number) => R) => Array(n).fill(0).map((_, i) => fn(i))
-const client = knex({ client: 'pg', connection: { host: 'localhost', user: 'recipest_docker', password: 'recipest_docker' } })
+const client = knex({ client: 'pg', connection: { host: 'localhost', user: 'recipest_docker', password: 'recipest_docker', port: 5433 } })
 
     ; (async () => {
         const USER_COUNT = 10_000;
