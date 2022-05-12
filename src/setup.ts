@@ -2,9 +2,16 @@ import { knex } from 'knex'
 import { animal, internet, commerce, lorem, company, random, date, datatype, helpers } from 'faker'
 
 const times = <R>(n: number, fn: (i: number) => R) => Array(n).fill(0).map((_, i) => fn(i))
-const client = knex({ client: 'pg', connection: { host: 'localhost', user: 'recipest_docker', password: 'recipest_docker' } })
 
-    ; (async () => {
+const client = knex(
+    {
+        client: 'pg',
+        connection: {
+            host: 'localhost',
+            user: 'recipest_docker',
+            password: 'recipest_docker'
+        }
+    }); (async () => {
         const USER_COUNT = 10_000;
         const USER_BATCH_COUNT = 100;
         const RECIPES_PER_USER = 50;
@@ -35,5 +42,5 @@ const client = knex({ client: 'pg', connection: { host: 'localhost', user: 'reci
             i % 2 && process.stdout.write('.')
         }))
         console.log('DONE')
-        client.destroy()
+        await client.destroy()
     })()
