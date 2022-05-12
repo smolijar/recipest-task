@@ -11,7 +11,9 @@ const client = knex(
             user: 'recipest_docker',
             password: 'recipest_docker'
         }
-    }); (async () => {
+    });
+
+(async () => {
         const USER_COUNT = 10_000;
         const USER_BATCH_COUNT = 100;
         const RECIPES_PER_USER = 50;
