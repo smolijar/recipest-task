@@ -25,7 +25,7 @@ STARTING..................................................DONE
 
 Inspect the database now, we have `users`, that created some `recipes`. Users can also rate the `recipes` using `reviews` and each review has a rating.
 
-![](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuIhEpimhI2nAp5L8IapEJY_AByrBISxFoIzIA2bAp2i6IgNcbN3b9sMb9fSeX1Qd5i7OGQd9cGMf25vPPcev5qY1WcurL1BA1VAXqX1AGHScxv2Qbm9q1000)
+![](https://www.plantuml.com/plantuml/png/SoWkIImgAStDuIhEpimhI2nAp5L8IapEJY_AByrBISxFoIzIA2bAp2i6IgNcbN3b9sMb9fSeX1Qd5i7OGQd9cGMf25vPPcev5qY1WcurL1BA1VAXqX1AeLONfi0XDIy5w0e0)
 
 ## Task
 
