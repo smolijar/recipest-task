@@ -1,6 +1,6 @@
 import { knex} from "knex";
 
-const client = knex(
+export const client = knex(
     {
         client: 'pg',
         connection: {

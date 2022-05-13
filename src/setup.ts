@@ -1,17 +1,7 @@
-import { knex } from 'knex'
-import { animal, internet, commerce, lorem, company, random, date, datatype, helpers } from 'faker'
+import { animal, internet, commerce, company, date, datatype, helpers } from 'faker'
+import {client} from "./fetcher";
 
-const times = <R>(n: number, fn: (i: number) => R) => Array(n).fill(0).map((_, i) => fn(i))
-
-const client = knex(
-    {
-        client: 'pg',
-        connection: {
-            host: 'localhost',
-            user: 'recipest_docker',
-            password: 'recipest_docker'
-        }
-    });
+const times = <R>(n: number, fn: (i: number) => R) => Array(n).fill(0).map((_, i) => fn(i));
 
 (async () => {
         const USER_COUNT = 10_000;
