@@ -49,7 +49,7 @@ Example response:
 
 ### Nice to have
 
-We found out that reviews from people who have at least once reviewed a meal with main ingredient _fish_ are more relevant. Exclude from calculation reviews from users that have not reviewed fish at least once.
+We found out that reviews from people who have at least once reviewed a meal with main ingredient _fish_ are more relevant. Do not consider reviews from users that have not reviewed fish at least once.
 
 ## Tips
 
