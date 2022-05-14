@@ -1,7 +1,7 @@
 # Recipest: Recipe API
 
 You have a database ready in a docker image, with necessary schema and a script to seed the data.
-Your goal is to implement a HTTP server with a single EP to return JSON data for the feature described bellow.
+Your goal is to implement an HTTP server with a single EP to return JSON data for the feature described bellow.
 
 
 ## Setup
@@ -29,11 +29,11 @@ Inspect the database now, we have `users`, that created some `recipes`. Users ca
 
 ## Task
 
-Implement a HTTP server that returns newest popular recipes.
+Implement an HTTP server that returns the newest popular recipes.
 
  1. `http://localhost:3000/api/popular-recipes` must return a valid JSON response with array of recipes, see example response
  2. Select only receipts with an average rating higher than `8`
- 3. Order results by `publish_time`. If it is null, use `create_time` instead, newest first
+ 3. Order results by `publish_time`. If it is null, use `create_time` instead, the newest first
  4. Return first 20 items only
 
 Example response:
