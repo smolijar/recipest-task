@@ -17,6 +17,6 @@ export function fetchFull(): Promise<any> {
         .select('rc.id', 'rc.name', {mainIngredient: 'rc.main_ingredient', publishTime: 'rc.publish_time', averageRating: 'rw.rating_value'})
         .where('rw.rating_value','>=',8)
         .limit(20)
-        .orderBy('rc.publish_time', 'rc.create_time')
+        .orderBy([{column: 'rc.publish_time', order: 'desc', nulls: 'last'}, {column: 'rc.create_time', order: 'desc', nulls: 'last'}])
         .then(rows => rows);
 }
